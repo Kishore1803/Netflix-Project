@@ -114,6 +114,7 @@ body {
   margin: 15px 0;
   outline: none;
   width: 300px;
+  border: none;
 }
 
 .cta{
