@@ -268,9 +268,10 @@ body {
 }
 
 .notification-item img {
-  width: 120px;
-  height: 80px;
-  object-fit: cover;
+  width: 180px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 .notification-item .info {
