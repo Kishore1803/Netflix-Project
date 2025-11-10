@@ -234,6 +234,69 @@ body {
   transform: scale(1.1);
 }
 
+.profile i {
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ===== NOTIFICATIONS ===== */
+.notifications {
+  padding: 50px 60px;
+}
+
+.notifications h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  background: #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+
+.notification-item:hover {
+  background: #2b2b2b;
+}
+
+.notification-item img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.notification-item .info {
+  padding: 15px 20px;
+}
+
+.notification-item .info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.notification-item .info p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+.notification-item .info span {
+  font-size: 0.8rem;
+  color: #999;
+}
+
 /*responsive design*/
 /* small devices */
 @media (max-width: 360px){
