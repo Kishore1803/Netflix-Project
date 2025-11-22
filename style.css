@@ -8,7 +8,10 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #000;
   color: #fff;
+}
 
+.navbar{
+  z-index: 1000;
 }
 
 /* home page */
@@ -109,20 +112,23 @@ body {
   color: white;
 }
 
-
 .img1{
-  width: 250px;
-  height: 260px;
-  border-radius: 25px;
+  width: 400px;
+  height: 300px;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    color: red;
+.carousel-control-prev-icon{
+  position: relative;
+  top: 90px;
+  left: 0;
 }
+
+.carousel-control-next-icon{
+  position: relative;
+  top: 90px;
+  right: 0;
+}
+
 
 .text{
   text-align: center;
@@ -193,10 +199,6 @@ body {
 /*responsive design*/
 /* small devices */
 @media (max-width: 360px){
-    .img1{
-      width: 300px;
-      height: 200px;
-    }
     .footer-links {
     grid-template-columns: repeat(2, 1fr);
     }
