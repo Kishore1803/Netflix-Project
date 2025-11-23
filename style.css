@@ -116,6 +116,15 @@ html{
   color: white;
 }
 
+.movie-row::-webkit-scrollbar{
+  display: none;
+}
+
+.movie-row{
+  -ms-overflow-style: none;  
+  scrollbar-width: none;    
+}
+
 .img-fluid {
   height: 175px;
   width: 200px;
