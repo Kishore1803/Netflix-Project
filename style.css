@@ -127,7 +127,11 @@ html{
 
 .img-fluid {
   height: 175px;
-  width: 200px;
+  width: 300px;
+}
+
+.text-white{
+  margin: 5px 0;
 }
 
 .text{
