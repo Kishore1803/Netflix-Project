@@ -212,9 +212,6 @@ html{
     .img-fluid{
       height: 100px;
     }
-    .row{
-      gap: 5px;
-    }
 }
 
 /* medium devices*/
