@@ -130,6 +130,10 @@ html{
   width: 300px;
 }
 
+.img-fluid:hover{
+  transform: scale(1.04);
+}
+
 .text-white{
   margin: 5px 0;
 }
