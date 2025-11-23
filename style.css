@@ -11,7 +11,7 @@ body {
 }
 
 html{
-  scrollbar-width:none ;
+  scrollbar-width: none;
 }
 
 .navbar{
@@ -117,8 +117,8 @@ html{
 }
 
 .img-fluid {
-  width: 400px;
-  height: 300px;
+  height: 175px;
+  width: 200px;
 }
 
 .text{
@@ -196,6 +196,9 @@ html{
     .netflix-footer {
     padding: 40px 5%;
     }
+    .img-fluid{
+      height: 100px;
+    }
 }
 
 /* medium devices*/
@@ -212,11 +215,6 @@ html{
     }
     .netflix-footer {
       padding: 40px 5%;
-    }
-    .img-fluid{
-      height: 150px;
-      display: flex;
-      flex: wrap;
     }
 } 
 
