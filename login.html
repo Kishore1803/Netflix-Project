@@ -21,26 +21,8 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ms-auto align-items-center">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="movie.html">Movies</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="tv.html">TV Shows</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="latest.html">Latest</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="list.html">My List</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="notify.html">Notifications</a>
-      </li>
-      <li class="nav-item">
-        <a class="btn btn-outline-light btn-sm mx-2" href="">Sign Up</a>
+      <li class="nav-item pe-5">
+        <a class="btn btn-outline-light btn-sm mx-5" href="">Sign Up</a>
       </li>
       <li class="nav-item">
         <a class="btn btn-danger btn-sm" href="login.html">Login</a>
@@ -52,10 +34,10 @@
   <div class="login-bg d-flex align-center justify-content-between">
     <div class="login-box container">
       <h2 class="text-white mb-4 mt-5 pt-5">Sign In</h2>
-      <form>
-        <input type="text" placeholder="Email or phone number" class="form-control w-75 mb-3">
-        <input type="password" placeholder="Password" class="form-control w-75 mb-3">
-        <button class="btn btn-danger py-2 mt-2">Sign In</button>
+      <form id="loginform">
+        <input id="user" type="text" placeholder="Email or phone number" class="form-control w-75 mb-3">
+        <input id="pass" type="password" placeholder="Password" class="form-control w-75 mb-3">
+        <button class="btn btn-danger py-2 mt-2" onclick="login()">Sign In</button>
         <div class="d-flex justify-content-between text-white mt-3">
           <div>
             <input type="checkbox"> <small>Remember me</small>
@@ -63,13 +45,13 @@
           <small class="text-secondary">Need help?</small>
         </div>
         <p class="text-secondary mt-4">
-          New to Netflix? <span class="text-white">Sign up now</span>
+          New to Netflix? <a class="signup" href=""><span class="text-white">Sign up now</span></a>
         </p>
       </form>
 
     </div>
 
   </div>
-
+<script src="script.js"></script>
 </body>
 </html>

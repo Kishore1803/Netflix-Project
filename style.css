@@ -138,6 +138,10 @@ html{
   margin: 5px 0;
 }
 
+.signup{
+  text-decoration: none;
+}
+
 .text{
   text-align: center;
   padding: 10px 0;
@@ -148,6 +152,7 @@ html{
   color: #fff;
   cursor: pointer;
 }
+
 
 .notifications {
   padding: 50px 60px;
