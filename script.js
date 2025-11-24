@@ -1,40 +1,69 @@
-// signup page
+// =============== SIGNUP FUNCTION ===============
 function signup() {
-    let name = document.getElementById("fullname").value;
-    let email = document.getElementById("email").value;
-    let pass = document.getElementById("password").value;
-    let cpass = document.getElementById("confirmPassword").value;
+    const fullname = document.getElementById("fullname").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
 
-    if (name === "" || email === "" || pass === "" || cpass === "") {
+    if (fullname === "" || email === "" || password === "" || confirmPassword === "") {
         alert("Please fill all fields!");
         return;
     }
 
-    if (pass !== cpass) {
+    if (password !== confirmPassword) {
         alert("Passwords do not match!");
         return;
     }
-    // Save data temporarily in localStorage (optional)
-    localStorage.setItem("netflixUser", email);
-    localStorage.setItem("netflixPass", pass);
+
+    // Create user object
+    const user = {
+        fullname: fullname,
+        email: email,
+        password: password
+    };
+
+    // Save user data in localStorage
+    localStorage.setItem("userData", JSON.stringify(user));
+
     alert("Account created successfully!");
-    window.location.href = "index.html";
+
+    // Redirect to login page
+    window.location.href = "login.html";
 }
 
-// login page
-function login() {
-    const username = document.getElementById("user").value;
-    const password = document.getElementById("pass").value;
 
-    if (username === "" || password === "") {
-        alert("Please enter username and password");
-        return;
+
+// =============== LOGIN FUNCTION ===============
+document.addEventListener("DOMContentLoaded", () => {
+    const loginForm = document.getElementById("loginForm");
+
+    if (loginForm) {
+        loginForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value;
+
+            const savedUser = JSON.parse(localStorage.getItem("userData"));
+
+            if (!savedUser) {
+                document.getElementById("msg").innerHTML =
+                    `<div class="alert alert-danger">No account found! Please sign up first.</div>`;
+                return;
+            }
+
+            if (email === savedUser.email && password === savedUser.password) {
+                document.getElementById("msg").innerHTML =
+                    `<div class="alert alert-success">Login successful! Redirecting...</div>`;
+
+                setTimeout(() => {
+                    window.location.href = "index.html"; // homepage or dashboard
+                }, 1000);
+
+            } else {
+                document.getElementById("msg").innerHTML =
+                    `<div class="alert alert-danger">Invalid email or password!</div>`;
+            }
+        });
     }
-    // Example login check (you can change the values)
-    if (username === "admin" && password === "1234") {
-        // Redirect to movie page
-        window.location.href = "movie.html";
-    } else {
-        alert("Incorrect username or password");
-    }
-}
+});

@@ -36,6 +36,10 @@ html{
   border: none;
 }
 
+.login{
+  min-height: 90vh;
+}
+
 
 .movie-row::-webkit-scrollbar{
   display: none;
