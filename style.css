@@ -28,18 +28,18 @@ html{
   flex-direction: column;
 }
 
-.home input{
-  padding: 12px 20px;
-  margin: 15px 0;
-  outline: none;
-  width: 300px;
-  border: none;
+.btn{
+  padding: 8px 15px;
 }
 
 .login{
   min-height: 90vh;
 }
 
+.home a{
+  text-decoration: none;
+  color: white;
+}
 
 .movie-row::-webkit-scrollbar{
   display: none;
