@@ -141,4 +141,8 @@ html{
     width: 250px;
     height: 150px;
   }
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+    display: none;  
+    gap:1px;
+  }
 }
