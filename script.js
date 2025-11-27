@@ -54,3 +54,11 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// NAVBAR LOGIN STATE
+function loginUser() {
+    // Show all login-only items
+    document.querySelectorAll(".login-only").forEach(item => {
+      item.classList.remove("d-none");
+    });
+}
