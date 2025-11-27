@@ -23,9 +23,9 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   line-height: 1.8;
   flex-direction: column;
+  height: 90vh;
 }
 
 .btn{
@@ -50,7 +50,7 @@ html{
   scrollbar-width: none;    
 }
 
-.img-fluid {
+.img-fluid{
   height: 175px;
   width: 300px;
 }
@@ -134,59 +134,10 @@ html{
   color: #999;
 }
 
-/*responsive design*/
-/* small devices */
-@media (max-width: 360px){
-    .footer-links {
-    grid-template-columns: repeat(2, 1fr);
-    }
-    .netflix-footer {
-    padding: 40px 5%;
-    }
+
+
+@media (max-width: 480px){
     .img-fluid{
       height: 100px;
-    }
-}
-
-/* medium devices*/
-@media (max-width: 480px){
-    .nav-link{
-      display: none;
-    }
-    .btn{
-      margin: 0 10px;
-      font-size: 12px;
-    }
-    .footer-links {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .netflix-footer {
-      padding: 40px 5%;
-    }
-} 
-
-/* Tablets, Laptops*/
-@media (max-width: 768px){
-    .nav-link{
-        display: none;
-    }
-    .footer-links {
-    grid-template-columns: repeat(2, 1fr);
-    }
-    .netflix-footer {
-    padding: 40px 5%;
-    }
-}
-
-/*Ultra Wide Monitors*/
-@media (min-width: 1500px){
-    .nav-link{
-      display: block;
-    }
-    .footer-links {
-    grid-template-columns: repeat(2, 1fr);
-    }
-    .netflix-footer {
-    padding: 40px 5%;
     }
 }

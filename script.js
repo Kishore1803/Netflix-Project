@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.getElementById("msg").innerHTML =
                     `<div class="alert alert-success">Login successful! Redirecting...</div>`;
                 setTimeout(() => {
-                    window.location.href = "home.html"; // homepage or dashboard
+                    window.location.href = "index.html"; // homepage or dashboard
                 }, 1000);
             } else {
                 document.getElementById("msg").innerHTML =
