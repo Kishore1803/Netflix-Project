@@ -131,6 +131,15 @@ html{
 }
 
 /* responsive */
+@media (max-width: 768px){
+  .home{
+    height: 85vh;
+  }
+  .img-fluid{
+    width: 280px;
+    height: 160px;
+  }
+}
 
 @media (max-width: 480px){
   .home{
@@ -143,6 +152,6 @@ html{
   }
   .carousel-control-next-icon, .carousel-control-prev-icon{
     display: none;  
-    gap:1px;
+    gap: 1px;
   }
 }
