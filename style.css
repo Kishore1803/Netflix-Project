@@ -28,10 +28,6 @@ html{
   height: 90vh;
 }
 
-.btn{
-  padding: 8px 15px;
-}
-
 .login{
   min-height: 90vh;
 }
@@ -134,10 +130,15 @@ html{
   color: #999;
 }
 
-
+/* responsive */
 
 @media (max-width: 480px){
-    .img-fluid{
-      height: 100px;
-    }
+  .home{
+    text-align: center;
+    height: 80vh;
+  }
+  .img-fluid{
+    width: 200px;
+    height: 100px;
+  }
 }
