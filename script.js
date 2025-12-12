@@ -26,7 +26,6 @@ function signup() {
 }
 
 
-
 // LOGIN 
 document.addEventListener("DOMContentLoaded", () => {
     const loginForm = document.getElementById("loginForm");
@@ -59,6 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
 function loginUser() {
     // Show all login-only items
     document.querySelectorAll(".login-only").forEach(item => {
-      item.classList.remove("d-none");
+        item.classList.remove("d-none");
     });
+
+    // Redirect to next page
+    window.location.href = "movie.html";  // <-- go to next page
 }
